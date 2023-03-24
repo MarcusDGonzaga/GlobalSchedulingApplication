@@ -1,4 +1,4 @@
-# GlobalScheduling-Application
+# GlobalSchedulingApplication
 Global Scheduling Application
 
 GUI-Based Application developed in Java
