@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="574.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppointmentUpdateFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="282.0" layoutX="25.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" width="539.0" />
+      <VBox layoutX="45.0" layoutY="64.0" prefHeight="484.0" prefWidth="500.0">
+         <children>
+            <HBox prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Appointment ID" />
+                  <TextField fx:id="appointmentID" prefHeight="25.0" prefWidth="50.0">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></TextField>
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="29.0" text="Title">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="appointmentTitle" layoutX="157.0" layoutY="10.0" prefHeight="25.0" prefWidth="184.0" promptText="Type Title Here">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="21.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Type" />
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="90.0" text="Description">
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </Label>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <ComboBox fx:id="apptTypeCB" prefHeight="25.0" prefWidth="160.0" promptText="Choose Type" />
+                  <TextField fx:id="appointmentDescription" prefHeight="25.0" prefWidth="220.0" promptText="Type Description Here">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Location" />
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="90.0" text="Contact">
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="90.0" prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <TextField fx:id="appointmentLocation" prefHeight="25.0" prefWidth="160.0" promptText="Type Location Here">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></TextField>
+                  <ComboBox fx:id="appointmentContactCB" prefWidth="150.0" promptText="Choose Contact">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="241.0" prefHeight="20.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Customer ID" />
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="90.0" text="User ID">
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="247.0" prefHeight="65.0" prefWidth="500.0">
+               <children>
+                  <ComboBox fx:id="customerIDCB" prefHeight="25.0" prefWidth="162.0" promptText="Choose Customer ID">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="userIDCB" layoutX="95.0" layoutY="10.0" prefHeight="25.0" prefWidth="162.0" promptText="Choose User ID">
+                     <HBox.margin>
+                        <Insets left="95.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="500.0" />
+            <HBox layoutX="10.0" layoutY="153.0" prefHeight="20.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Start Date" />
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="90.0" text="Start Time">
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="43.0" prefWidth="500.0">
+               <children>
+                  <DatePicker fx:id="startDate" promptText="Choose Start Date" />
+                  <ComboBox fx:id="startTime" prefHeight="25.0" prefWidth="162.0" promptText="Choose Start Time">
+                     <HBox.margin>
+                        <Insets left="85.0" />
+                     </HBox.margin></ComboBox>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="203.0" prefHeight="20.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="End Date" />
+                  <Label layoutX="10.0" layoutY="10.0" prefWidth="90.0" text="End Time">
+                     <HBox.margin>
+                        <Insets left="170.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="220.0" prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <DatePicker fx:id="endDate" promptText="Choose End Date" />
+                  <ComboBox fx:id="endTime" prefHeight="25.0" prefWidth="162.0" promptText="Choose End Time">
+                     <HBox.margin>
+                        <Insets left="85.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="41.0" prefWidth="500.0" />
+            <HBox layoutX="10.0" layoutY="367.0" prefHeight="41.0" prefWidth="500.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionSaveAppointment" prefWidth="60.0" text="Save">
+                     <HBox.margin>
+                        <Insets left="350.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#onActionCancelToMainMenu" prefWidth="60.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="210.0" layoutY="8.0" text="Update Appointment">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

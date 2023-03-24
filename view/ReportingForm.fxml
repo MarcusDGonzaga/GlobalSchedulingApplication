@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReportingFormController">
+
+    <children>
+        <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#1f93ff00" height="351.0" layoutX="9.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="1130.0" />
+        <VBox layoutX="24.0" layoutY="98.0" prefHeight="517.0" prefWidth="1102.0">
+            <children>
+                <TableView fx:id="allReporting" prefHeight="232.0" prefWidth="1102.0">
+                    <columns>
+                        <TableColumn fx:id="reportingIDCol" prefWidth="50.0" text="ID" />
+                        <TableColumn fx:id="reportingTitleCol" prefWidth="150.0" text="Title" />
+                        <TableColumn fx:id="reportingDescCol" prefWidth="200.0" text="Description" />
+                        <TableColumn fx:id="reportingLocationCol" prefWidth="115.0" text="Location" />
+                        <TableColumn fx:id="reportingContactCol" minWidth="0.0" prefWidth="125.0" text="Contact" />
+                        <TableColumn fx:id="reportingTypeCol" minWidth="20.0" prefWidth="125.0" text="Type" />
+                  <TableColumn fx:id="startDateTimeCol" minWidth="20.0" prefWidth="125.0" text="Start Date &amp; Time" />
+                  <TableColumn fx:id="endDateTimeCol" minWidth="20.0" prefWidth="125.0" text="End Date &amp; Time" />
+                  <TableColumn fx:id="customerIDCol" minWidth="0.0" prefWidth="85.0" text="Customer_ID" />
+                    </columns>
+                </TableView>
+            <HBox layoutX="10.0" layoutY="363.0" prefHeight="33.0" prefWidth="1102.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="144.0" text="Reporting Views" />
+               </children></HBox>
+                <HBox prefHeight="28.0" prefWidth="1102.0">
+                    <children>
+                  <RadioButton fx:id="apptTypeMonth" mnemonicParsing="false" onAction="#onActionTypeMonth" prefHeight="17.0" prefWidth="266.0" text="Customer Appointments by Type and Month">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="reportToggleGrp" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="byContact" mnemonicParsing="false" onAction="#onActionByContact" prefHeight="10.0" prefWidth="95.0" text="By Contact" toggleGroup="$reportToggleGrp">
+                     <HBox.margin>
+                        <Insets left="225.0" />
+                     </HBox.margin></RadioButton>
+                  <RadioButton fx:id="apptLocMonth" layoutX="74.0" layoutY="10.0" mnemonicParsing="false" onAction="#onActionLocMonth" prefHeight="17.0" prefWidth="290.0" text="Customer Appointments by Location and Month" toggleGroup="$reportToggleGrp">
+                     <HBox.margin>
+                        <Insets left="225.0" />
+                     </HBox.margin></RadioButton>
+                    </children>
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                </HBox>
+            <HBox layoutX="10.0" layoutY="340.0" prefHeight="111.0" prefWidth="1102.0">
+               <children>
+                  <ComboBox fx:id="comboBox1" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="100.0" top="50.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="comboBox2" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Button fx:id="enterBtn" mnemonicParsing="false" onAction="#onActionEnter" prefWidth="60.0" text="Enter">
+                     <HBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Label text="Total Number Appointments">
+                     <HBox.margin>
+                        <Insets left="100.0" top="50.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="totalNumTxt">
+                     <HBox.margin>
+                        <Insets left="10.0" top="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+                <HBox prefHeight="97.0" prefWidth="1102.0">
+                    <VBox.margin>
+                        <Insets top="20.0" />
+                    </VBox.margin>
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onActionBackToMainMenu" prefWidth="60.0" text="Back">
+                            <HBox.margin>
+                                <Insets left="950.0" top="20.0" />
+                            </HBox.margin></Button>
+                        <Button mnemonicParsing="false" onAction="#onActionExit" prefWidth="60.0" text="Exit">
+                            <HBox.margin>
+                                <Insets left="20.0" top="20.0" />
+                            </HBox.margin></Button>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Label layoutX="535.0" layoutY="23.0" text="Reporting">
+            <font>
+                <Font name="System Bold" size="17.0" />
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>

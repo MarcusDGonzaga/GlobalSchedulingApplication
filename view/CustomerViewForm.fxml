@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerViewFormController">
+   <children>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#1f93ff00" height="401.0" layoutX="23.0" layoutY="67.0" stroke="BLACK" strokeType="INSIDE" width="964.0" />
+      <VBox layoutX="42.0" layoutY="78.0" prefHeight="489.0" prefWidth="926.0">
+         <children>
+            <TableView fx:id="allCustomers" prefHeight="355.0" prefWidth="926.0">
+              <columns>
+                <TableColumn fx:id="allCustIDCol" prefWidth="50.0" text="ID" />
+                <TableColumn fx:id="allCustNameCol" prefWidth="225.0" text="Name" />
+                  <TableColumn fx:id="allCustPhoneCol" prefWidth="150.0" text="Phone Number" />
+                  <TableColumn fx:id="allCustAddressCol" prefWidth="275.0" text="Address" />
+                  <TableColumn fx:id="allCustFLvlCol" prefWidth="125.0" text="State/Province ID" />
+                  <TableColumn fx:id="allCustPostalCol" minWidth="20.0" prefWidth="100.0" text="Postal Code" />
+              </columns>
+            </TableView>
+            <HBox prefHeight="93.0" prefWidth="685.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionAddCustomer" prefHeight="25.0" prefWidth="60.0" text="Add">
+                     <HBox.margin>
+                        <Insets left="650.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#onActionUpdateCustomer" prefHeight="25.0" prefWidth="60.0" text="Update">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#onActionDeleteCustomer" prefHeight="25.0" prefWidth="60.0" text="Delete">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionBackToMainMenu" prefWidth="60.0" text="Back">
+                     <HBox.margin>
+                        <Insets left="700.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#onActionExit" prefWidth="60.0" text="Exit">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="463.0" layoutY="28.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="386.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerAddFormController">
+   <children>
+      <VBox layoutX="25.0" layoutY="64.0" prefHeight="392.0" prefWidth="500.0">
+         <children>
+            <HBox prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Customer ID" />
+                  <TextField fx:id="customerID">
+                     <HBox.margin>
+                        <Insets left="57.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Customer Name" />
+                  <TextField fx:id="customerFN" promptText="First Name">
+                     <HBox.margin>
+                        <Insets left="57.0" />
+                     </HBox.margin></TextField>
+                  <TextField fx:id="customerLN" promptText="Last Name">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin></TextField>
+               </children></HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="60.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Phone Number" />
+                  <TextField fx:id="phoneNumber" promptText="111-111-1111">
+                     <HBox.margin>
+                        <Insets left="57.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="20.0" prefWidth="500.0">
+               <children>
+                  <Label prefWidth="90.0" text="Address" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="90.0" prefHeight="37.0" prefWidth="500.0">
+               <children>
+                  <TextField fx:id="houseAddress" prefHeight="25.0" prefWidth="339.0" promptText="House Number and Street  i.e. &quot;123 Street&quot;">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="countryCombo" onAction="#selectCountryCB" prefHeight="25.0" prefWidth="162.0" promptText="Country" />
+                  <ComboBox fx:id="firstLevelCombo" prefHeight="25.0" prefWidth="162.0" promptText="State/Province">
+                     <HBox.margin>
+                        <Insets left="14.0" />
+                     </HBox.margin></ComboBox>
+                  <TextField fx:id="postalCode" prefHeight="25.0" prefWidth="125.0" promptText="Postal Code">
+                     <HBox.margin>
+                        <Insets left="14.0" />
+                     </HBox.margin></TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onActionSaveCustInfo" prefWidth="60.0" text="Save">
+                     <HBox.margin>
+                        <Insets left="300.0" />
+                     </HBox.margin></Button>
+                  <Button mnemonicParsing="false" onAction="#onActionCancelToMainMenu" prefWidth="60.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin></Button>
+               </children></HBox>
+         </children>
+      </VBox>
+      <Label layoutX="218.0" layoutY="14.0" text="Add Customer">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
